@@ -17,3 +17,11 @@ spec:
         image: gcr.io/wh-host/hello:1.0.0
         ports:
         - containerPort: 80
+        resources:
+          limits:
+            memory: "200Mi"
+            cpu: "100m"
+          requests:
+            memory: "200Mi"
+            cpu: "100m"
+

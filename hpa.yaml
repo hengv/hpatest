@@ -8,5 +8,5 @@ spec:
     kind: Deployment
     name: hello-app
   minReplicas: 1
-  maxReplicas: 100
-  targetCPUUtilizationPercentage: 20
+  maxReplicas: 20
+  targetCPUUtilizationPercentage: 50
