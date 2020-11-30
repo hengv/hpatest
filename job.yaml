@@ -1,0 +1,13 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: abtest
+spec:
+  template:
+    spec:
+      containers:
+      - name: abtest
+        image: grc.io/wh-host/abtest:1.0
+        command: ["ab", "-c", "5000",  "-r",  "-n",  "40000000",  "http://hello-svc/"]
+      restartPolicy: Never
+  backoffLimit: 4
