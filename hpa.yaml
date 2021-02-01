@@ -9,4 +9,4 @@ spec:
     name: hello-app
   minReplicas: 1
   maxReplicas: 20
-  targetCPUUtilizationPercentage: 60
+  targetCPUUtilizationPercentage: 30
